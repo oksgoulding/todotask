@@ -21,18 +21,27 @@
 
 <body>
   <header>
-    <nav class="warraper">
-      <ul class="navbar">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success mt-4" style="height: 42px;" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop">
-          Add Task
+    <nav class="navbar navbar-expand-lg bg-light">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success mt-4" style="height: 42px;" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
+        Add Task
+      </button>
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <li class="navbar-item"><i class="fa-solid fa-house-user fa-2x"></i><a href=" #">Home</a></li>
-        <li class="navbar-item"><i class="fa-solid fa-bell fa-2x"></i><a href="#">Notifications</a></li>
-        <li class="navbar-item"><i class="fa-solid fa-calendar fa-2x"></i><a a href="#">Calendar</a></li>
-        <li class="navbar-item"><i class="fa-solid fa-filter fa-2x"></i><a a href="#">Add Filter</a></li>
-      </ul>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex flex-column">
+            <a class="nav-link active" aria-current="page" href=""><i class="fa-solid fa-house-user me-2"></i>Home </a>
+            <a class="nav-link" href=""><i class="fa-solid fa-calendar-days me-2"></i>Calender</a>
+            <a class="nav-link" href=""><i class="fa-solid fa-bell me-2"></i>Notifications</a>
+            <a class="nav-link" href=""><i class="fa-solid fa-filter me-2"></i>Filter</a>
+          </div>
+        </div>
+      </div>
     </nav>
 
   </header>
@@ -106,21 +115,20 @@
           <div>
             <!-- taks infor -->
             <div class="card mb-3">
-              <h5 class="card-header text-center fw-bold">Developing Content</h5>
+              <h5 class="card-header text-center fw-bold">Task Name</h5>
               <div class="card-body border">
                 <div class="mb-3 ">
                   <!-- <label class="form-control for="">Assigned to:</label> -->
-                  <input class=" form-control" type="text" placeholder="Assigned to: David">
+                  <input class=" form-control" type="text" placeholder="Assigned to: ">
                 </div>
                 <div class="mb-3">
                   <!-- <label for="">Due Date: </label>
-                    <input type="date"> -->
-                  <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+                  <input type="date"> -->
+                  <input class="form-control" type="text" placeholder="Due Date: ">
                 </div>
                 <div class="mb-3 ">
                   <!-- <label for="">Description:</label> -->
-                  <textarea class="form-control" id="" cols=" 30" rows="3"
-                    placeholder="Description: Write articles on our services, our products and offers"></textarea>
+                  <textarea class="form-control" id="" cols=" 30" rows="3" placeholder="Description: "></textarea>
                 </div>
                 <!-- Edit buttons -->
                 <div class="d-flex gap-3 justify-content-center ">
